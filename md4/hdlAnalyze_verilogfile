@@ -1,0 +1,2 @@
+work "C:/MentorGraphics/Mgc_home/pkgs/rtlc_psr/rtlc/lib/unimacro.v" -quiet -2000
+work "C:/MentorGraphics/Mgc_home/pkgs/rtlc_psr/rtlc/lib/xcv7_retarget_lib.v" -quiet -2000

@@ -1,0 +1,65 @@
+rec_start3 C:/MentorGraphics/Mgc_home/pkgs/psr/userware/rec6Lib_final_filtered3_recanon.aig
+&flow3 -K 6 -C 16 -blv
+&saveaig
+&fraig;&synch2 -K 6 -C 500; &st;&if -C 8;&save;&load;&st;&if -C 12;&save;&load;&st;&if -C 16;&save;&load ;&put; mfs2 -W 4 -M 500 -C 7000; &save; &load
+&synch2 -K 6 -C 500; &lf -m  -E 5  -C 8 ;&put; mfs2 -W 4 -M 500 -C 7000; &save; &load
+&st; &sopb -R 10 -C 4
+&st; &sopb -R 10
+&synch2 -K 6 -C 500; &lf -m  -E 5 -K 6 -C 16; &put; mfs2 -W 4 -M 500 -C 7000; &get -m; &save
+&dch -C 500; &if -m  -K 6 -C 20; &put; mfs2 -W 4 -M 500 -C 7000; &get -m; &save
+&loadaig
+&st; &if -C 16; &save; &st; &syn2; &st;&if -C 8;&save;&load;&st;&if -C 12;&save;&load;&st;&if -C 16;&save;&load 
+&st; &if -y -K 6; &dch -f; &st;&if -C 8;&save;&load;&st;&if -C 12;&save;&load;&st;&if -C 16;&save;&load;&mfs;  &save;&load
+&st; &if -y -K 6; &synch2; &st;&if -C 8;&save;&load;&st;&if -C 12;&save;&load;&st;&if -C 16;&save;&load;&mfs;  &save;&load
+&load2
+&save
+&load
+rec_start3 C:/MentorGraphics/Mgc_home/pkgs/psr/userware/rec6Lib_final_filtered3_recanon.aig
+&flow3 -K 6 -C 16 -blv
+&saveaig
+&fraig;&synch2 -K 6 -C 500; &st;&if -C 8;&save;&load;&st;&if -C 12;&save;&load;&st;&if -C 16;&save;&load ;&put; mfs2 -W 4 -M 500 -C 7000; &save; &load
+&synch2 -K 6 -C 500; &lf -m  -E 5  -C 8 ;&put; mfs2 -W 4 -M 500 -C 7000; &save; &load
+&st; &sopb -R 10 -C 4
+&st; &sopb -R 10
+&synch2 -K 6 -C 500; &lf -m  -E 5 -K 6 -C 16; &put; mfs2 -W 4 -M 500 -C 7000; &get -m; &save
+&dch -C 500; &if -m  -K 6 -C 20; &put; mfs2 -W 4 -M 500 -C 7000; &get -m; &save
+&loadaig
+&st; &if -C 16; &save; &st; &syn2; &st;&if -C 8;&save;&load;&st;&if -C 12;&save;&load;&st;&if -C 16;&save;&load 
+&st; &if -y -K 6; &dch -f; &st;&if -C 8;&save;&load;&st;&if -C 12;&save;&load;&st;&if -C 16;&save;&load;&mfs;  &save;&load
+&st; &if -y -K 6; &synch2; &st;&if -C 8;&save;&load;&st;&if -C 12;&save;&load;&st;&if -C 16;&save;&load;&mfs;  &save;&load
+&load2
+&save
+&load
+rec_start3 C:/MentorGraphics/Mgc_home/pkgs/psr/userware/rec6Lib_final_filtered3_recanon.aig
+&flow3 -K 6 -C 16 -blv
+&saveaig
+&fraig;&synch2 -K 6 -C 500; &st;&if -C 8;&save;&load;&st;&if -C 12;&save;&load;&st;&if -C 16;&save;&load ;&put; mfs2 -W 4 -M 500 -C 7000; &save; &load
+&synch2 -K 6 -C 500; &lf -m  -E 5  -C 8 ;&put; mfs2 -W 4 -M 500 -C 7000; &save; &load
+&st; &sopb -R 10 -C 4
+&st; &sopb -R 10
+&synch2 -K 6 -C 500; &lf -m  -E 5 -K 6 -C 16; &put; mfs2 -W 4 -M 500 -C 7000; &get -m; &save
+&dch -C 500; &if -m  -K 6 -C 20; &put; mfs2 -W 4 -M 500 -C 7000; &get -m; &save
+&loadaig
+&st; &if -C 16; &save; &st; &syn2; &st;&if -C 8;&save;&load;&st;&if -C 12;&save;&load;&st;&if -C 16;&save;&load 
+&st; &if -y -K 6; &dch -f; &st;&if -C 8;&save;&load;&st;&if -C 12;&save;&load;&st;&if -C 16;&save;&load;&mfs;  &save;&load
+&st; &if -y -K 6; &synch2; &st;&if -C 8;&save;&load;&st;&if -C 12;&save;&load;&st;&if -C 16;&save;&load;&mfs;  &save;&load
+&load2
+&save
+&load
+rec_start3 C:/MentorGraphics/Mgc_home/pkgs/psr/userware/rec6Lib_final_filtered3_recanon.aig
+&flow3 -K 6 -C 16 -blv
+&saveaig
+&fraig;&synch2 -K 6 -C 500; &st;&if -C 8;&save;&load;&st;&if -C 12;&save;&load;&st;&if -C 16;&save;&load ;&put; mfs2 -W 4 -M 500 -C 7000; &save; &load
+&synch2 -K 6 -C 500; &lf -m  -E 5  -C 8 ;&put; mfs2 -W 4 -M 500 -C 7000; &save; &load
+&st; &sopb -R 10 -C 4
+&st; &sopb -R 10
+&synch2 -K 6 -C 500; &lf -m  -E 5 -K 6 -C 16; &put; mfs2 -W 4 -M 500 -C 7000; &get -m; &save
+&dch -C 500; &if -m  -K 6 -C 20; &put; mfs2 -W 4 -M 500 -C 7000; &get -m; &save
+&loadaig
+&st; &if -C 16; &save; &st; &syn2; &st;&if -C 8;&save;&load;&st;&if -C 12;&save;&load;&st;&if -C 16;&save;&load 
+&st; &if -y -K 6; &dch -f; &st;&if -C 8;&save;&load;&st;&if -C 12;&save;&load;&st;&if -C 16;&save;&load;&mfs;  &save;&load
+&st; &if -y -K 6; &synch2; &st;&if -C 8;&save;&load;&st;&if -C 12;&save;&load;&st;&if -C 16;&save;&load;&mfs;  &save;&load
+&save2
+&load2
+&save
+&load
