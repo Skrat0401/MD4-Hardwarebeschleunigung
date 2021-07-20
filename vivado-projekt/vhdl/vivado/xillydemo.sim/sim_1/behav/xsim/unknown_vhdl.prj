@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../src/xillydemo.vhd" \
+"../../../../xillydemo.ip_user_files/bd/vivado_system/ip/vivado_system_rst_processing_system7_0_100M_0/sim/vivado_system_rst_processing_system7_0_100M_0.vhd" \
+"../../../../xillydemo.ip_user_files/bd/vivado_system/sim/vivado_system.vhd" \
+"../../../../xillydemo.srcs/sources_1/imports/MD4/md4_core.vhd" \
+"../../../../xillydemo.srcs/sources_1/imports/MD4/ram.vhd" \
+"../../../../xillydemo.srcs/sources_1/imports/MD4/handle_md4_core.vhd" \
+
+# Do not sort compile order
+nosort
