@@ -14,7 +14,7 @@ int main(int argc, char* argv[]) {
   unsigned char* buf;
   uint32_t arr[16];
 
-  char tologic[64] = "EinekleineTestnachrichtumeinenwunderbarenMD4hashzugenerierenhehe";
+  char tologic[64] = "EinekleineTestnachrichtumeinenwunderbarenMD4hashzugenerieren    ";
 
   struct {
     unsigned int v1;
@@ -45,7 +45,7 @@ int main(int argc, char* argv[]) {
   for (int i = 0; i < 16; i++) {
     printf(" In array on slot %d is %x \n", i, arr[i]);
   };
-  start = clock();
+
   // for (int ii = 0; ii < 10; ii++) {
   fdr = open("/dev/xillybus_read_32", O_RDONLY);
   fdw = open("/dev/xillybus_write_32", O_WRONLY);
@@ -53,13 +53,14 @@ int main(int argc, char* argv[]) {
     perror("Failed to open Xillybus device file(s)");
     exit(1);
   }
+  start = clock();
   rc = write(fdw, (void*)&arr, sizeof(arr));
   // rc = write(fdw, (void*)&tologic, sizeof(tologic));
   rb = read(fdr, (void*)&fromlogic, sizeof(fromlogic));
+  end = clock();
   close(fdr);
   close(fdw);
   //};
-  end = clock();
 
   printf("number of bytes wrote : %d \n ", rc);
   printf("size of unsigned is %d byte \n ", sizeof(unsigned int));
@@ -77,28 +78,6 @@ int main(int argc, char* argv[]) {
 
   // Not checking return values of write() and read(). This must be done
   // in a real-life program to ensure reliability.
-  // tologic.v1 = 123;
-  // memcpy(tologic.v2, "HalloHalloHalloHalloHalloHalloHalloHalloHalloHalloHalloHalloaaaa", 65);  // ~ pi/4
-
-  // char string[65];
-  // char string2[16];
-  // memcpy(string, "HalloHalloHalloHalloHalloHalloHalloHalloHalloHalloHalloHalloaaaa", 65);
-  // Not checking return values of write() and read(). This must be done
-  // in a real-life program to ensure reliability.
-
-  // write(fdw, (void*)&tologic, sizeof(tologic));
-  // read(fdr, (void*)&fromlogic, sizeof(fromlogic));
-
-  // write(fdw, (void*)&string, sizeof(string));
-  // read(fdr, (void*)&string2, sizeof(string2));
-
-  // printf(
-  //    "FPGA said: %d + 1 = %d and also "
-  //    "sin(%s) = %s\n",
-  //    tologic.v1, fromlogic.v1, tologic.v2, fromlogic.v2);
-  // "FPGA said: %d + 1 = %d and also "
-  // "sin(%s) = %s\n",
-  // string, string2, string, string2);
 
   close(fdr);
   close(fdw);
