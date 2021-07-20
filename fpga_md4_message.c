@@ -14,27 +14,17 @@ int main(int argc, char* argv[]) {
   unsigned char* buf;
   uint32_t arr[16];
 
-  struct {
-    char str[64];
-
-  } tologic;
+  char tologic[64] = "EinekleineTestnachrichtumeinenwunderbarenMD4hashzugenerierenhehe";
 
   struct {
     unsigned int v1;
     unsigned int v2;
     unsigned int v3;
     unsigned int v4;
+    unsigned int v5;
   } fromlogic;
   clock_t start, end;
 
-  fdr = open("/dev/xillybus_read_32", O_RDONLY);
-  fdw = open("/dev/xillybus_write_32", O_WRONLY);
-
-  if ((fdr < 0) || (fdw < 0)) {
-    perror("Failed to open Xillybus device file(s)");
-    exit(1);
-  }
-  memcpy(tologic.str, "EinekleineTestnachrichtumeinenwunderbarenMD4hashzugenerieren!!!!", 65);
   arr[0] = 0x00008061;
   arr[1] = 0x00000000;
   arr[2] = 0x00000000;
@@ -56,15 +46,26 @@ int main(int argc, char* argv[]) {
     printf(" In array on slot %d is %x \n", i, arr[i]);
   };
   start = clock();
-  // rc = write(fdw, (void*)&arr, sizeof(arr));
-  rc = write(fdw, (void*)&tologic, sizeof(tologic));
+  // for (int ii = 0; ii < 10; ii++) {
+  fdr = open("/dev/xillybus_read_32", O_RDONLY);
+  fdw = open("/dev/xillybus_write_32", O_WRONLY);
+  if ((fdr < 0) || (fdw < 0)) {
+    perror("Failed to open Xillybus device file(s)");
+    exit(1);
+  }
+  rc = write(fdw, (void*)&arr, sizeof(arr));
+  // rc = write(fdw, (void*)&tologic, sizeof(tologic));
   rb = read(fdr, (void*)&fromlogic, sizeof(fromlogic));
+  close(fdr);
+  close(fdw);
+  //};
   end = clock();
 
   printf("number of bytes wrote : %d \n ", rc);
-  printf("Size of unsigned is %d byte \n ", sizeof(unsigned int));
+  printf("size of unsigned is %d byte \n ", sizeof(unsigned int));
+  // printf("%d \n", sizeof(tologic));
 
-  printf("FPGA said: %x and  %x and %x and %x \n number of bytes read: %d \n", fromlogic.v1, fromlogic.v2, fromlogic.v3, fromlogic.v4, rb);
+  printf("FPGA said: %x and  %x and %x and %x \n number of bytes read: %d \n in %d clock cycles: \n ", fromlogic.v1, fromlogic.v2, fromlogic.v3, fromlogic.v4, rb, fromlogic.v5);
   double runningTime = ((double)(end - start) / CLOCKS_PER_SEC);
   printf("elapsed time for program: %f seconds.\n", runningTime);
   printf("start: %ld clock cycles.\n", start);
