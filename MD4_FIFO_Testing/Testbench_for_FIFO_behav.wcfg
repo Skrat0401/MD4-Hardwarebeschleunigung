@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Testbench_for_FIFO_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Testbench_for_FIFO" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2389958fs"></ZoomStartTime>
+      <ZoomEndTime time="3231959fs"></ZoomEndTime>
+      <Cursor1Time time="2599958fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="268"></NameColumnWidth>
+      <ValueColumnWidth column_width="118"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="31" />
+   <wvobject fp_name="/Testbench_for_FIFO/T_bus_clk" type="logic">
+      <obj_property name="ElementShortName">T_bus_clk</obj_property>
+      <obj_property name="ObjectShortName">T_bus_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/T_reset_32" type="logic">
+      <obj_property name="ElementShortName">T_reset_32</obj_property>
+      <obj_property name="ObjectShortName">T_reset_32</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/T_user_w_write_32_data" type="array">
+      <obj_property name="ElementShortName">T_user_w_write_32_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">T_user_w_write_32_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/DUT/md4_core_handler/ram_addr" type="array">
+      <obj_property name="ElementShortName">ram_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/DUT/md4_core_handler/data_to_md4" type="array">
+      <obj_property name="ElementShortName">data_to_md4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_to_md4[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/DUT/md4_core_handler/cache_array" type="array">
+      <obj_property name="ElementShortName">cache_array[0:15][31:0]</obj_property>
+      <obj_property name="ObjectShortName">cache_array[0:15][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/DUT/md4_core_handler/rd_en_to_md4_buff" type="logic">
+      <obj_property name="ElementShortName">rd_en_to_md4_buff</obj_property>
+      <obj_property name="ObjectShortName">rd_en_to_md4_buff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/T_user_w_write_32_wren" type="logic">
+      <obj_property name="ElementShortName">T_user_w_write_32_wren</obj_property>
+      <obj_property name="ObjectShortName">T_user_w_write_32_wren</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/T_user_r_read_32_rden" type="logic">
+      <obj_property name="ElementShortName">T_user_r_read_32_rden</obj_property>
+      <obj_property name="ObjectShortName">T_user_r_read_32_rden</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/T_user_r_read_32_data" type="array">
+      <obj_property name="ElementShortName">T_user_r_read_32_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">T_user_r_read_32_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/test_a" type="array">
+      <obj_property name="ElementShortName">test_a[0:15][31:0]</obj_property>
+      <obj_property name="ObjectShortName">test_a[0:15][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/DUT/md4_core_handler/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/DUT/md4_core_handler/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/DUT/md4_core_handler/empty_to_md4" type="logic">
+      <obj_property name="ElementShortName">empty_to_md4</obj_property>
+      <obj_property name="ObjectShortName">empty_to_md4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/DUT/md4_core_handler/wren_from_md4" type="logic">
+      <obj_property name="ElementShortName">wren_from_md4</obj_property>
+      <obj_property name="ObjectShortName">wren_from_md4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/DUT/md4_core_handler/rd_en_to_md4" type="logic">
+      <obj_property name="ElementShortName">rd_en_to_md4</obj_property>
+      <obj_property name="ObjectShortName">rd_en_to_md4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/DUT/md4_core_handler/hashout" type="array">
+      <obj_property name="ElementShortName">hashout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">hashout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/DUT/md4_core_handler/flag_w_en" type="logic">
+      <obj_property name="ElementShortName">flag_w_en</obj_property>
+      <obj_property name="ObjectShortName">flag_w_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/DUT/md4_core_handler/data" type="array">
+      <obj_property name="ElementShortName">data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/DUT/md4_core_handler/address" type="array">
+      <obj_property name="ElementShortName">address[4:0]</obj_property>
+      <obj_property name="ObjectShortName">address[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/DUT/md4_core_handler/busy" type="logic">
+      <obj_property name="ElementShortName">busy</obj_property>
+      <obj_property name="ObjectShortName">busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/DUT/md4_core_handler/clr" type="logic">
+      <obj_property name="ElementShortName">clr</obj_property>
+      <obj_property name="ObjectShortName">clr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/DUT/md4_core_handler/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/DUT/md4_core_handler/md4_msg" type="array">
+      <obj_property name="ElementShortName">md4_msg[127:0]</obj_property>
+      <obj_property name="ObjectShortName">md4_msg[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/DUT/md4_core_handler/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/DUT/md4_core_handler/we" type="logic">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/DUT/md4_core_handler/addr_b_uppper_bit" type="logic">
+      <obj_property name="ElementShortName">addr_b_uppper_bit</obj_property>
+      <obj_property name="ObjectShortName">addr_b_uppper_bit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/DUT/md4_core_handler/array_full" type="logic">
+      <obj_property name="ElementShortName">array_full</obj_property>
+      <obj_property name="ObjectShortName">array_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/DUT/md4_core_handler/counter" type="other">
+      <obj_property name="ElementShortName">counter</obj_property>
+      <obj_property name="ObjectShortName">counter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/DUT/flag_w_en" type="logic">
+      <obj_property name="ElementShortName">flag_w_en</obj_property>
+      <obj_property name="ObjectShortName">flag_w_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench_for_FIFO/DUT/md4_core_handler/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+</wave_config>

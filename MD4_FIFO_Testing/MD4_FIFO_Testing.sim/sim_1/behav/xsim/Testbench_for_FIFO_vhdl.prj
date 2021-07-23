@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../MD4_FIFO_Testing.srcs/sources_1/imports/Testbench_MD4/handle_md4_core.vhd" \
+"../../../../MD4_FIFO_Testing.srcs/sources_1/imports/Testbench_MD4/ram.vhd" \
+"../../../../MD4_FIFO_Testing.srcs/sources_1/imports/Testbench_MD4/md4_core.vhd" \
+"../../../../MD4_FIFO_Testing.srcs/sources_1/imports/Testbench_MD4/xillybus_top.vhd" \
+"../../../../MD4_FIFO_Testing.srcs/sim_1/imports/Testbench_MD4/Testbench_for_FIFO.vhd" \
+
+# Do not sort compile order
+nosort
